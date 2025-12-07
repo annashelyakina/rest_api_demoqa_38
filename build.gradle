@@ -51,3 +51,9 @@ tasks.register('api_demoqa_tests', Test) {
         includeTags("api_demoqa_tests")
     }
 }
+
+tasks.register('api_demoqa_one_book_test', Test) {
+    useJUnitPlatform {
+        includeTags("api_demoqa_one_book_test")
+    }
+}
