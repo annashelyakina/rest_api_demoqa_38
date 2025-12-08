@@ -24,10 +24,7 @@ public class TestBase {
         Configuration.browser = "chrome";
         Configuration.browserVersion =("128.0");
         Configuration.timeout = 10000;
-        String remote = System.getProperty("remote", "").trim();
-        if (!remote.isEmpty()) {
-            Configuration.remote = remote;
-        }
+        Configuration.remote = System.getProperty("remote", "").trim();
 
         // Настраиваем capabilities для Selenoid
         DesiredCapabilities capabilities = new DesiredCapabilities();
