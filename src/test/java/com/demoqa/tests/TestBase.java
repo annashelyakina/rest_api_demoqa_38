@@ -27,6 +27,7 @@ public class TestBase {
         String remote = System.getProperty("remote", "").trim();
         if (!remote.isEmpty()) {
             Configuration.remote = remote;
+        }
 
         // Настраиваем capabilities для Selenoid
         DesiredCapabilities capabilities = new DesiredCapabilities();
