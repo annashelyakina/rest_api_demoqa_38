@@ -22,9 +22,9 @@ public class TestBase {
         RestAssured.baseURI="https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.browser = "chrome";
-        Configuration.browserVersion =("128.0");
+        Configuration.browserVersion =("143.0");
         Configuration.timeout = 10000;
-        Configuration.remote = System.getProperty("remote", "");
+        Configuration.remote = System.getProperty("remote");
 
         // Настраиваем capabilities для Selenoid
         DesiredCapabilities capabilities = new DesiredCapabilities();
