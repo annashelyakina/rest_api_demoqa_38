@@ -24,7 +24,7 @@ allure {
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:7.10.1",
+            'com.codeborne:selenide:7.10.1',
             'io.qameta.allure:allure-selenide:2.24.0',
             'io.rest-assured:rest-assured:5.5.6',
             'io.rest-assured:json-schema-validator:5.5.6',
@@ -36,6 +36,8 @@ dependencies {
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
+
     useJUnitPlatform()
 
     testLogging {
