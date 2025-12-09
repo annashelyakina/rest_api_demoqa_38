@@ -24,7 +24,7 @@ public class TestBase {
         Configuration.browser = "chrome";
         Configuration.browserVersion ="128.0";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.remote = System.getProperty("https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
 
         // Настраиваем capabilities для Selenoid
